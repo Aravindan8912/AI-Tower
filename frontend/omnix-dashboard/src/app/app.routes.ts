@@ -4,6 +4,7 @@ import { Shell } from './layout/shell';
 import { AgentDetailPage } from './pages/agent-detail';
 import { AgentsPage } from './pages/agents';
 import { AuditPage } from './pages/audit';
+import { BillingPage } from './pages/billing';
 import { ExecutionsPage } from './pages/executions';
 import { HardwarePage } from './pages/hardware';
 import { LoginPage } from './pages/login';
@@ -25,6 +26,7 @@ export const routes: Routes = [
       { path: 'models', component: ModelsPage },
       { path: 'hardware', component: HardwarePage },
       { path: 'audit', component: AuditPage },
+      { path: 'billing', component: BillingPage },
     ],
   },
   { path: '**', redirectTo: '' },

@@ -68,6 +68,7 @@ export class Shell {
     { path: '/models', label: 'Models' },
     { path: '/hardware', label: 'Hardware' },
     { path: '/audit', label: 'Audit' },
+    { path: '/billing', label: 'Billing' },
   ];
 
   constructor() {
