@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/AAT.API/AAT.API.csproj" />
+    <Project Path="backend/AAT.Application/AAT.Application.csproj" />
+    <Project Path="backend/AAT.Domain/AAT.Domain.csproj" />
+    <Project Path="backend/AAT.Infrastructure/AAT.Infrastructure.csproj" />
+    <Project Path="backend/AAT.Telemetry/AAT.Telemetry.csproj" />
+    <Project Path="backend/AAT.Worker/AAT.Worker.csproj" />
+  </Folder>
+  <Folder Name="/observer/">
+    <Project Path="observer/AAT.Observer/AAT.Observer.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/OllamaWorkload/OllamaWorkload.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AAT.Api.Tests/AAT.Api.Tests.csproj" />
+    <Project Path="tests/AAT.Application.Tests/AAT.Application.Tests.csproj" />
+    <Project Path="tests/AAT.Observer.Tests/AAT.Observer.Tests.csproj" />
+  </Folder>
+</Solution>

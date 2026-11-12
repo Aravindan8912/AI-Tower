@@ -1,0 +1,19 @@
+---
+description: Project-wide rules for the OMNIX AI / AAT MVP.
+alwaysApply: true
+---
+
+- Use .NET 10 LTS, C#, ASP.NET Core Web API, Angular 20, TypeScript, Tailwind CSS, PostgreSQL, EF Core/Npgsql, and a .NET Worker Service unless the project owner explicitly changes the stack.
+- Build a modular monolith first. Do not introduce microservices, Kafka, Kubernetes, Temporal, or extra databases into the first monitoring milestone without a demonstrated requirement.
+- Never collect or transmit raw prompts, completions, system prompts, credentials, authorization headers, or sensitive request bodies.
+- Observer telemetry must be asynchronous and best-effort. LLM execution must continue if monitoring, buffering, network transmission, or the AAT API fails.
+- Use bounded queues, retry with exponential backoff and jitter, and expose dropped-event/queue-health metrics.
+- Store timestamps in UTC. Use stable event IDs and idempotent ingestion.
+- Enforce tenant isolation and agent authentication on every relevant endpoint.
+- Use DTO validation, pagination, rate limits, payload limits, structured logging, and secure secret handling.
+- Keep controllers thin; put business logic in application services.
+- Use EF Core migrations for schema changes and add tests for business rules and APIs.
+- Hardware/request time correlation is an estimate unless exact process-level metrics are available. Label it accurately.
+- Implement monitoring and analytics before AI optimization, approval workflows, or skill deployment.
+- Never auto-deploy an optimization to production. Future deployments require explicit approval, signature verification, local validation, staged rollout, and rollback.
+- Inspect existing code before editing. Keep the app buildable and runnable after each vertical slice.
